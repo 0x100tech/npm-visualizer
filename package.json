@@ -4,7 +4,10 @@
   "description": "Visualize node modules contents, navigate and analyze their size",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "eslint --ext js,jsx .",
+    "test": "nyc mocha src/**/*.test.js",
+    "coverage": "nyc --reporter=text mocha src/**/*.test.js",
+    "coveralls": "nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,17 @@
   "bugs": {
     "url": "https://github.com/0x100tech/npm-visualizer/issues"
   },
-  "homepage": "https://github.com/0x100tech/npm-visualizer#readme"
+  "homepage": "https://github.com/0x100tech/npm-visualizer#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "git-hooks": "^1.1.10",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  },
+  "dependencies": {}
 }
