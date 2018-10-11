@@ -38,7 +38,7 @@ jobs:
       # run linter!
       - run: 
           name: Run Linter
-          command: npm ruт дште
+          command: npm run lint
 
       # run tests!
       - run: 
