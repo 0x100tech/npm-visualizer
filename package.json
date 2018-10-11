@@ -1,0 +1,25 @@
+{
+  "name": "npm-visualizer",
+  "version": "1.0.0",
+  "description": "Visualize node modules contents, navigate and analyze their size",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x100tech/npm-visualizer.git"
+  },
+  "keywords": [
+    "node_modules",
+    "npm",
+    "visualize",
+    "analyze"
+  ],
+  "author": "0x100",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0x100tech/npm-visualizer/issues"
+  },
+  "homepage": "https://github.com/0x100tech/npm-visualizer#readme"
+}
