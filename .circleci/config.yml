@@ -34,7 +34,12 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
+
+      # run linter!
+      - run: 
+          name: Run Linter
+          command: npm ruт дште
+
       # run tests!
       - run: 
           name: Run tests
