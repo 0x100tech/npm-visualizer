@@ -26,7 +26,9 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run:
+          name: Install dependancies
+          command: npm install
 
       - save_cache:
           paths:
@@ -34,9 +36,15 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm test
+      - run: 
+          name: Run tests
+          command: npm test
 
       # coverage report
-      - run: npm run coveralls
+      - run: 
+          name: Coverage reports
+          command: npm run coveralls
+          environment:
+            COVERALLS_REPO_TOKEN: QQ22mc3IQrwojJYpL5iEY62KvfHBkVavN
 
 
