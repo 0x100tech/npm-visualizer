@@ -4,7 +4,7 @@ const http = require('http');
 const express = require('express');
 const opener = require('opener');
 
-const projectRoot = path.resolve(__dirname, '..');
+const projectRoot = path.resolve(__dirname, '../../../');
 
 /**
  * Starts visualizing server
