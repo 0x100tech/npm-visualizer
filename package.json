@@ -27,7 +27,7 @@
   "homepage": "https://github.com/0x100tech/npm-visualizer#readme",
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "eslint": "^5.6.1",
+    "eslint": "^6.0.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
