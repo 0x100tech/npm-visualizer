@@ -7,7 +7,9 @@
     "lint": "eslint --ext js,jsx .",
     "test": "nyc mocha src/**/*.test.js",
     "coverage": "nyc --reporter=text mocha src/**/*.test.js",
-    "coveralls": "nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
+    "coveralls": "nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,8 @@
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "express": "^4.16.4",
-    "opener": "^1.5.1"
-  }
+    "opener": "^1.5.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
