@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.11.1",
     "git-hooks": "^1.1.10",
     "mocha": "^5.2.0",
-    "nyc": "^13.0.1"
+    "nyc": "^14.0.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
